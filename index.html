@@ -1,13 +1,13 @@
 <html lang="en-US">
 <meta charset="UTF-8">
 <head>
-    <title>block party</title>
+    <title>Block Party</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:100, 400,700,300' rel='stylesheet' type='text/css'>
     <script src='//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js'></script>
     <link href="css/style.css" rel="stylesheet">
-
+    <link href="css/media-queries.css" rel="stylesheet">
 </head>
 
 <body>
@@ -15,49 +15,76 @@
     <div class="backstretch"
          style="left: 0; top: 0; overflow: hidden; margin: 0; padding: 0; z-index: -999998; position: absolute;"></div>
     <div class="player"
-         data-property="{videoURL:'https://www.youtube.com/watch?v=vVla-_MarIY', containment:'header', startAt: 2, stopAt: 155, mute:false, autoPlay:false, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:25}"></div>
+         data-property="{videoURL:'https://www.youtube.com/watch?v=vVla-_MarIY', containment:'header', mute:false, autoPlay:false, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:25, realfullscreen: true}"></div>
     <div class="cb-overlay cb-overlay-color cb-overlay-image"></div>
     <div class="container">
-        <a href="#" title="Block Party">
-            <div class="logo"></div>
-        </a>
-
+        <!--<a href=""index.html" title="Block Party">-->
+            <!--<div class="logo"></div>-->
+            <a href="index.html"  class="logo">
+                <img src="img/block-party-logo.png" alt="Block Party" title="Block Party" />
+            </a>
+        <!--</a>-->
+        <button class="menu-toggle"></button>
         <nav>
-            <!--<a href="#" title="Homepage">About us</a>-->
-            <!--<a href="#" title="Homepage">Events</a>-->
-            <!--<a href="#" title="Homepage">Contact</a>-->
-        </nav>
+            <ul>
+                <li><a href="about.html" title="About us">About us</a></li>
+                <li><a href="events.html" title="Events">Events</a></li>
+                <li><a href="contact.html" title="Contact">Contact</a></li>
+            </ul>
 
+        </nav>
         <div class="mod-player">
             <div class="player-controls">
                 <!--<a id="yt-volume" class="fa fa-volume-up" href="#">&nbsp;</a>-->
-                <a id="yt-play" href="#"><span>Play<br>Video</span></a>
+                <a id="yt-play" href="#" class="fa fa-pause"><span>Play<br>Video</span></a>
             </div>
         </div>
+
 
         <div class="head">
             <h1>Welcome</h1>
 
             <p>Best parties around the world</p>
         </div>
+
+    </div>
+    <div class="sm-box">
+        <div class="footer-box">
+            <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+        </div>
+
+        <div class="footer-box">
+            <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+
+        </div>
+
+        <div class="footer-box">
+            <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
+
+        </div>
+
+
     </div>
 </header>
 
 <main>
     <div class="box-double box-vertical-align box-yellow">
         <div class="box-text box-single">
-            <h2>More parties<br class="hidden-mobile">comming soon</h2>
-            <!--  <span>ijasdjiaisjda</span> -->
+            <h2>More parties<br class="hidden-mobile">coming soon</h2>
+            <span class="small-capslock-span">2015 Best Party</span>
         </div>
 
         <div class="box-single box-img">
             <img src="img/hp/party-1-960x475.jpg">
 
             <div class="box-text">
-                <div class="box-text-inner">
-                    <h3>We had a <br class="hidden-mobile">great time together</h3>
-                    <span>2014 Miami</span>
-                </div>
+
+                <a href="events/berlin.html" target="_blank">
+                    <div class="box-text-inner">
+
+                        <h3>We had a<br class="hidden-mobile">great time together</h3>
+                        <span><em>2014 Berlin</em></span>
+                    </div></a>
             </div>
         </div>
     </div>
@@ -67,27 +94,31 @@
             <img src="img/hp/party-2-960x475.jpg">
 
             <div class="box-text">
+
+                    <a href="events/miami.html" target="_blank">
                 <div class="box-text-inner">
 
-                    <h3>International Event<br class="hidden-mobile">new fresh superparty</h3>
-                    <span>2013 Berlin</span>
-                </div>
+                    <h3>International Event<br class="hidden-mobile">new fresh super party</h3>
+                    <span><em>2012 Miami</em></span>
+                </div></a>
+
             </div>
         </div>
 
+
         <div class="box-text box-single">
-            <h2>Keep calm<br class="hidden-mobile">and party with friends</h2>
-            <span>Block Party</span>
+            <h2>"Keep calm<br class="hidden-mobile">and party with friends"</h2>
+            <span class="small-capslock-span">somebody says</span>
         </div>
     </div>
 
-    <!-- formular -->
+    <!-- contact form - join us -->
 
     <div class="forma">
         <div class="container">
 
             <div class="contact">
-                <span class="small-capslock">Let's party together</span>
+                <span class="small-capslock contact-span">Let's party together</span>
 
                 <h3>Join us on next party, it's free!</h3></div>
             <div id="contact-form">
@@ -108,9 +139,9 @@
                         </div>
                     </div>
                     <div class="control-group">
-                        <div class="controls">
+                        <div class="controls controls-form">
                             <input type="text" placeholder="*Phone" id="phone" required
-                                   data-validation-required-message="Please enter your phonee"/>
+                                   data-validation-required-message="Please enter your phone"/>
                         </div>
                     </div>
 
@@ -130,13 +161,13 @@
         </div>
     </div>
 
-    <!-- bela forma -->
+    <!-- white form -->
     <div class="box-double-white box-white">
         <div class="container">
             <h2>Why party with us</h2>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis
+            <p class="pa-ha">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                 nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
     </div>
@@ -145,7 +176,7 @@
     <div class="social">
 
         <div class="footer-box">
-            <i class="fa fa-map-marker"></i>
+            <a href="https://www.google.rs/maps/place/Resavska+23,+Beograd+11000/@44.8069744,20.4647859,17z/data=!3m1!4b1!4m2!3m1!1s0x475a7aa647967615:0xda89af4e46cda64e" target="_blank"><i class="fa fa-map-marker"></i></a>
 
             <div class="small">Location<br>
                 <span class="small-capslock">Belgrade, Serbia</span>
@@ -153,25 +184,29 @@
         </div>
 
         <div class="footer-box">
-            <i class="fa fa-phone"></i>
+            <a href="tel:+381642448421"><i class="fa fa-phone"></i></a>
 
             <div class="small">Phone<br>
-                <span class="small-capslock">+ 381 64 244 84 21</span>
+                <span class="small-capslock">+381 64 244 84 21</span>
             </div>
 
         </div>
 
         <div class="footer-box">
-            <i class="fa fa-envelope"></i>
+            <a href="mailto:jbanjanac@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+
 
             <div class="small">Mail<br>
-                <span class="small-capslock-email">jbanjanac@gmail.com</span>
+                <span class="small-capslock-email">bestparty@jelenabanjanac.rs</span>
             </div>
 
         </div>
     </div>
 </footer>
 <script src='js/jquery.mb.YTPlayer.js'></script>
+<script src='js/scripts.js'></script>
+<script src='js/contact/contact_me.js'></script>
+<script src='js/contact/jqValidation.js'></script>
 <script>
     $(".player").mb_YTPlayer();
     $('#yt-play').click(function (event) {
@@ -184,12 +219,6 @@
         $(this).toggleClass("fa-play fa-pause");
         return false;
     });
-    //    $('#yt-volume').click(function (event) {
-    //        event.preventDefault();
-    //        $('.player').toggleVolume();
-    //        $(this).toggleClass("fa-volume-off fa-volume-up");
-    //        return false;
-    //    });
 </script>
 </body>
 </html>

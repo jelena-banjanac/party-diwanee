@@ -1,0 +1,140 @@
+@media (max-width: 1600px) {
+    .box-text h2,
+    .contact h3,
+    .box-double-white h2,
+    .box-img .box-text h3 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 1024px) {
+    main .container {
+        width: 100%;
+        padding: 0 30px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .box-text h2,
+    .box-text-left h2
+    .contact h3,
+    .box-double-white h2,
+    .box-double-yellow h2,
+    .box-img .box-text h3 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .box-text h2,
+    .box-text-left h2
+    .contact h3,
+    .box-double-white h2,
+    .box-double-yellow h2,
+    .box-img .box-text h3 {
+        font-size: 26px;
+    }
+    body h1 {
+    font-size: 56px
+    }
+
+    body p {
+        font-size: 14px
+    }
+
+    .footer-box {
+        width: 100%;
+        padding-left: 30px;
+        margin-bottom: 20px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .social {
+        padding: 28px 0 0;
+    }
+
+    footer i.fa {
+        margin-left: 0;
+    }
+
+    .sm-box .footer-box {
+        padding-left: 0;
+        width: auto;
+    }
+
+    nav.active {
+        display: block;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.1);
+        z-index: 99999;
+        position: relative;
+        margin: 20px 0 0;
+        height: 100%;
+    }
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+        text-transform: uppercase;
+        letter-spacing: 9px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .box-vertical-align {
+        display: block;
+    }
+
+    .box-single {
+        width: 100%;
+    }
+
+    .box-text {
+        padding: 40px 0;
+    }
+
+    .control-group {
+        width: 100%;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .box-vertical-align {
+        display: block;
+    }
+
+    .box-single {
+        width: 100%;
+    }
+
+    .box-text {
+        padding: 30px 0;
+    }
+
+    .control-group {
+        width: 100%;
+
+    }
+}
