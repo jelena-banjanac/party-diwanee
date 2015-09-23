@@ -68,6 +68,12 @@ $(document).ready(function () {
         $('nav').toggleClass('active');
     });
 });
+$(document).ready(function () {
+    $('.sub-nav-toggle').click(function () {
+        $(this).toggleClass('active');
+        $(this).closest('main').find('.sub-nav').toggleClass('active');
+    });
+});
 var Z63 = Z63 || {};
 Z63.ChangePageTitle = function (e) {
     "use strict";

@@ -104,7 +104,17 @@ header.player-background > .container {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+.box-text-left-contact {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 0 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 
+}
 .box-text h2 {
     line-height: 120%;
     margin: 0 0 20px;
@@ -226,12 +236,19 @@ header.player-background > .container {
 
 .box-text-left h2 {
     font-size: 40px;
+}
 
+.box-text-left-contact h2 {
+    font-size: 60px;
 }
 
 .box-text-left p {
     line-height: 160%;
 }
+.box-text-left-contact p {
+    line-height: 160%;
+}
+
 
 main .container {
     width: 960px;
@@ -699,7 +716,7 @@ ul.sub-nav li {
 
 ul.sub-nav li:nth-child(even) {
     width: 25%;
-    background: #eef7f9;
+    background: #D0E6EC;
 }
 
 ul.sub-nav li a {
@@ -780,3 +797,25 @@ ul.sub-nav li:hover {
     transition: all .3s ease-in-out;
 }
 
+.box-text.no-hover {
+    background: transparent;
+}
+
+.arrow {
+    display: block;
+    width: 100%;
+    padding: 16px 30px;
+    font-size: 18px;
+}
+
+.sub-nav-toggle {
+    display: none;
+}
+
+.mobile {
+    display: none;
+}
+
+.regular {
+    display: block;
+}
